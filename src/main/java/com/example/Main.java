@@ -13,8 +13,8 @@ public class Main {
   //   laptop.setAlien(new ArrayList<>());
     
 
-    Alien alien1 = new Alien(101, "Peter Griffin");
-    Alien alien2 = new Alien(102, "Joe Swanson");
+    // Alien alien1 = new Alien(101, "Peter Griffin");
+    // Alien alien2 = new Alien(102, "Joe Swanson");
     // alien.getLaptop().add(laptop);
     // laptop.setAlien(alien);
     // laptop.getAlien().add(alien);
@@ -22,11 +22,11 @@ public class Main {
     Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
     SessionFactory sf = configuration.buildSessionFactory();
 
-    Session session = sf.openSession();
-    session.beginTransaction();
-    session.persist(alien1);
-    session.persist(alien2);
-     session.getTransaction().commit();
+    // Session session = sf.openSession();
+    // session.beginTransaction();
+    // session.persist(alien1);
+    // session.persist(alien2);
+    //  session.getTransaction().commit();
 
     System.out.println("\n\n");
 

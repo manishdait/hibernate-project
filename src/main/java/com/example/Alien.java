@@ -2,20 +2,33 @@ package com.example;
 
 import java.util.List;
 
+import javax.persistence.Cacheable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+// import jakarta.persistence.Cacheable;
+
 // import jakarta.persistence.AttributeOverride;
 // import jakarta.persistence.AttributeOverrides;
 // import jakarta.persistence.Embedded;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+// import jakarta.persistence.Column;
+// import jakarta.persistence.Entity;
+// import jakarta.persistence.Id;
+// import jakarta.persistence.ManyToMany;
 // import jakarta.persistence.OneToMany;
 // import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+// import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "alien_table")
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Alien {
   @Id
   private int id;

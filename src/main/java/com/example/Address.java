@@ -1,6 +1,8 @@
 package com.example;
 
-import jakarta.persistence.Embeddable;
+import javax.persistence.Embeddable;
+
+// import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Address {
