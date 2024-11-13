@@ -32,15 +32,15 @@ public class Alien {
   // @OneToMany(mappedBy = "alien")
   // private List<Laptop> laptop;
 
-  @ManyToMany(mappedBy = "alien")
-  private List<Laptop> laptop;
+  // @ManyToMany(mappedBy = "alien")
+  // private List<Laptop> laptop;
 
   public Alien() {}
 
-  public Alien(int id, String name, List<Laptop> laptop) {
+  public Alien(int id, String name) {
     this.id = id;
     this.name = name;
-    this.laptop = laptop;
+    // this.laptop = laptop;
   }
 
   public int getId() {
@@ -75,17 +75,17 @@ public class Alien {
   //   this.laptop = laptop;
   // }
 
-  public List<Laptop> getLaptop() {
-    return laptop;
-  }
+  // public List<Laptop> getLaptop() {
+  //   return laptop;
+  // }
 
-  public void setLaptop(List<Laptop> laptop) {
-    this.laptop = laptop;
-  }
+  // public void setLaptop(List<Laptop> laptop) {
+  //   this.laptop = laptop;
+  // }
   
   @Override
   public String toString() {
-    return "Alien [id=" + id + ", name=" + name + ", laptop=" + laptop + "]";
+    return "Alien [id=" + id + ", name=" + name + "]";
   }
 
 }
