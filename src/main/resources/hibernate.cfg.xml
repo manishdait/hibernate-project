@@ -19,5 +19,6 @@
 
     <mapping class="com.example.Alien" />
     <mapping class="com.example.Laptop" />
+    <mapping class="com.example.Student" />
   </session-factory>
 </hibernate-configuration>
